@@ -21,7 +21,7 @@ import pandas as pd
 𡶗ߢ𫇟𐪓𗜍=pd.read_csv
 from keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder,StandardScaler
-from generate_challenge import NUMBERS_WORDS
+אבג=['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
 𡶗ߢ𫇟𐪓𞡊="f55ad55fd955e4e760211d4344737f6de1b87722012ec4bea6559fccc418ff04"
 𡶗ߢ𫇟𐪓𩸐=128
 𡶗ߢ𫇟𐪓𐴖=44
@@ -74,7 +74,7 @@ def 𡶗ߢ𫇟𐪓𫮹():
  𡶗ߢ𫇟𐪓𞸓,𡶗ߢ𫇟𐪓𧣀=𡶗ߢ𫇟𐪓妀(𡶗ߢ𫇟𐪓𠔔="code.csv")
  𡶗ߢ𫇟𐪓𞸓=𡶗ߢ𫇟𐪓ܙ(𡶗ߢ𫇟𐪓𞸓)
  𡶗ߢ𫇟𐪓𞸚=LabelEncoder()
- 𡶗ߢ𫇟𐪓𐙕=𡶗ߢ𫇟𐪓ꕟ(𡶗ߢ𫇟𐪓𞸚.fit_transform(NUMBERS_WORDS))
+ 𡶗ߢ𫇟𐪓𐙕=𡶗ߢ𫇟𐪓ꕟ(𡶗ߢ𫇟𐪓𞸚.fit_transform(אבג))
  𡶗ߢ𫇟𐪓逿=𡶗ߢ𫇟𐪓𐴡.predict(𡶗ߢ𫇟𐪓𞸓)
  𡶗ߢ𫇟𐪓𞡽=[𡶗ߢ𫇟𐪓𐙕.index(𡶗ߢ𫇟𐪓ផ(i))+1 for i in 𡶗ߢ𫇟𐪓逿]
  𡶗ߢ𫇟𐪓𞡽="".join(𡶗ߢ𫇟𐪓𠴵(i)for i in 𡶗ߢ𫇟𐪓𞡽)
